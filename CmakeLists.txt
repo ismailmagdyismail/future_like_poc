@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.17)
+
+project(future_like)
+
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD 17)
+
+set(src_dir "${CMAKE_SOURCE_DIR}")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
+
+include_directories("${CMAKE_SOURCE_DIR}")
+
+
+add_executable(
+    future
+    ${src_dir}/main.cpp
+)
